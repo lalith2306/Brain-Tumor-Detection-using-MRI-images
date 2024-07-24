@@ -16,6 +16,7 @@ for fn in uploaded.keys():
       name=fn, length=len(uploaded[fn])))
 
 # Then move kaggle.json into the folder where the API expects to find it.
+#upload your own api key which is dowloaded from your own kaggle account when choose file button is dispalyed
 !mkdir -p ~/.kaggle/ && mv kaggle.json ~/.kaggle/ && chmod 600 ~/.kaggle/kaggle.json
 
 !kaggle datasets download -d sartajbhuvaji/brain-tumor-classification-mri
